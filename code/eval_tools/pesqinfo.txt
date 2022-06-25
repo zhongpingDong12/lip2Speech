@@ -1,0 +1,18 @@
+http://www.utdallas.edu/~loizou/speech/software.htm
+
+
+
+    * PESQ and other objective measures for evaluating quality of speech processed by noise suppression algorithms [composite.zip]
+
+                  Relevant references:
+
+              o
+
+                Quality Assessment:   Hu, Y. and Loizou, P. (2008). “Evaluation of objective quality measures for speech enhancement,” IEEE Transactions on Speech and Audio Processing, 16(1), 229-238. 
+              o
+
+                Intelligibility Assessment:  Ma, J., Hu, Y. and Loizou, P. (2009). "Objective measures for predicting speech intelligibility in noisy conditions based on new band-importance functions", Journal of the Acoustical Society of America, 125(5), 3387-3405.
+
+    * Speech Enhancement Code [GA_code.zip]
+
+                  Relevant Reference:  "A geometric approach to spectral subtraction," Speech Communication, 50, 453-466, 2008
