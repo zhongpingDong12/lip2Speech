@@ -46,15 +46,19 @@ You can find all demo files here. **_demo_**.
 
 A few samples of the network output are given below:
 
-** Demo on Single Speaker **
+
+**Demo on Single Speaker**
 
 [![Sample1](https://img.youtube.com/vi/-apenOxMQM8/0.jpg)](https://youtu.be/-apenOxMQM8)
 
-** Demo on Multiple Speakers **
+
+**Demo on Multiple Speakers**
+
 
 [![Sample2](https://img.youtube.com/vi/62pQrLAbw8E/0.jpg)](https://youtu.be/62pQrLAbw8E)
 
-** Demo on Vocabulary **
+
+** Demo on Vocabulary**
 
 [![Sample2](https://img.youtube.com/vi/62pQrLAbw8E/0.jpg)]
 
