@@ -47,13 +47,6 @@ Once data preparation steps are done, autoencoder model could be trained on the 
 
 You can find all demo files here. **_demo_**.
 
-A few samples of the network output are given below:
-<style>
-td, th {
-   border: none!important;
-}
-</style>
-
  **Demo on Single Speaker**     | **Demo on Multiple Speakers**      | **Demo on Vocabulary**     
  ------------- | ------------- | -------- 
  [![Sample1](https://img.youtube.com/vi/-apenOxMQM8/0.jpg)](https://youtu.be/-apenOxMQM8)         | [![Sample2](https://img.youtube.com/vi/62pQrLAbw8E/0.jpg)](https://youtu.be/62pQrLAbw8E)       |[![Sample3](https://img.youtube.com/vi/yv0-dakuY6k/0.jpg)](https://youtu.be/yv0-dakuY6k)  
