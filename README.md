@@ -57,13 +57,14 @@ A few samples of the network output are given below:
 
 **Demo on Multiple Speakers**
 
-
 [![Sample2](https://img.youtube.com/vi/62pQrLAbw8E/0.jpg)](https://youtu.be/62pQrLAbw8E)
+
 
 
 **Demo on Vocabulary**
 
-[![Sample2]([https://img.youtube.com/vi/yv0-dakuY6k/0.jpg)](https://youtu.be/yv0-dakuY6k)
+[![Sample3](https://img.youtube.com/vi/yv0-dakuY6k/0.jpg)](https://youtu.be/yv0-dakuY6k)
+
 
 ## Cite
 The related work, you can cite:
