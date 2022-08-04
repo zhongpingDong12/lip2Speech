@@ -1,8 +1,8 @@
 # Lip2Speech
 Generate intelligent speech from lip Gabor features
 
-### Abstract
-In this study, we developed two advanced speech reconstruction systems based on the fast and lightweight Gabor extraction method: **GaborPic2Speech** and **GaborFea2Speech**. 
+## Abstract
+In this study, we proposed two advanced speech reconstruction systems based on the fast and lightweight Gabor extraction method: **GaborPic2Speech** and **GaborFea2Speech**. 
 
 Our GaborPic2Speech system is an end-to-end neural network. It applied Gabor filter technology filtered out irrelevant facial and lip information, and use the most relevant lip pixels as visual input data. Compared to baseline Lip2AudSpec system, which used 7 layers CNN to learn the entire face image, GaborPic2Speech reduced the size of the input data, simplifies the model structure, and improves the accuracy to a certain extent.
 
@@ -14,6 +14,15 @@ Moreover, our GaborFea2Speech system can also reconstruct intelligent speech in 
 
 **You can find all results analyisis details: _analysis_**
 
+## Architecture
+We developed two Gabor based speech recontruction system: GaborPic2Speech and GaborFea2Speech and we uses the deep end-to-end Lip2AudSpec as the basline system.
+
+Our GaborPic2Speech system is an end-to-end neural network. It uses the lip Gabor Picture as visual input, and fed into 1-layer convolutional neural network (CNN) for image learning and 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.  Then, it decoded the output to generate auditory spectrogram and transfer to audio waveform. 
+
+Our GaborFea2Speech system is a Sequence-to-sequence learning (Seq2Seq). It uses seven Gabor features values extracted from dynamic lip frames as visual input, and fed into 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.
+ 
+![Main Network](figures/Network_main.png)
+
 ## Requirements
 We implemented the code in python3 using tensorflow, keras, scipy, dlib, skimage, pandas, numpy, cv2, sklearn, IPython, fnmatch. The mentioned libraries should be installed before running the codes. All the libraries can be easily installed using pip:
 ```shell
@@ -21,7 +30,7 @@ pip install tensorflow-gpu keras scipy opencv-python sklearn
 ```
 The backend for Keras can be changed easily if needed.
 
-### Data preparation
+## Data preparation
 This study is based on GRID corpus(http://spandh.dcs.shef.ac.uk/gridcorpus/). To run the codes, you need to first download and preprocess both videos and audios.
 
 By running **_Gabor_extraction.py_** frames will be cropped from videos and Lip Gabor Pictures and Gabor Features will be extracted.
@@ -33,14 +42,8 @@ After extarcted visual and audio data, we then window and integrate all data  in
 ### Training the models
 Once data preparation steps are done, autoencoder model could be trained on the auditory spectrograms corresponding to valid videos using **_train_autoencoder.py_**. Training the main network could be performed using **_train_GP2Speech.py_** and **_train_GF2Speech.py_**
 
-### Architecture
-In this study, we developed two advanced speech reconstruction systems based on the fast and lightweight Gabor extraction method: GaborPic2Speech and GaborFea2Speech. We used the deep end-to-end Lip2AudSpec as the basline system.
-Our GaborPic2Speech system is an end-to-end neural network. It uses the lip Gabor Picture as visual input, and fed into 1-layer convolutional neural network (CNN) for image learning and 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.  Then, it decoded the output to generate auditory spectrogram and transfer to audio waveform. 
-Our GaborFea2Speech system is a Sequence-to-sequence learning (Seq2Seq). It uses seven Gabor features values extracted from dynamic lip frames as visual input, and fed into 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.
- 
-![Main Network](figures/Network_main.png)
 
-### Demo
+## Demo
 
 You can find all demo files here. **_demo_**.
 
@@ -62,7 +65,7 @@ A few samples of the network output are given below:
 
 [![Sample2](https://img.youtube.com/vi/62pQrLAbw8E/0.jpg)
 
-### Cite
+## Cite
 The related work, you can cite:
 ```
 @inproceedings{abel2018fast,
