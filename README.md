@@ -2,7 +2,7 @@
 Generate intelligent speech from lip Gabor features
 
 ### Abstract
-In this study, we developed two advanced speech reconstruction systems based on the fast and lightweight Gabor extraction method: GaborPic2Speech and GaborFea2Speech. 
+In this study, we developed two advanced speech reconstruction systems based on the fast and lightweight Gabor extraction method: **GaborPic2Speech** and **GaborFea2Speech**. 
 
 Our GaborPic2Speech system is an end-to-end neural network. It applied Gabor filter technology filtered out irrelevant facial and lip information, and use the most relevant lip pixels as visual input data. Compared to baseline Lip2AudSpec system, which used 7 layers CNN to learn the entire face image, GaborPic2Speech reduced the size of the input data, simplifies the model structure, and improves the accuracy to a certain extent.
 
@@ -12,7 +12,7 @@ We used the Grid Corpus dataset to test the results on single speaker, multiple 
 
 Moreover, our GaborFea2Speech system can also reconstruct intelligent speech in multi-speaker scenarios. As the number of speakers increases, this system can still maintain robust speech construction capability (1-S, 2-S, 4-S, 6-S, 8-S; 72%, 68%, 71%, 65%, 61%), which is incomparable with other speech reconstruction systems, for example, GaborPic2Speech (1-S, 2-S, 4-S, 6-S, 8-S; 73%, 72%, 56%, 54%, 50%) and Lip2AudSpec (1-S, 2-S, 4-S, 6-S, 8-S; 0.63%, 40%, 39%, 33%, 29 %). This breaks the limitation that existing speech reconstruction systems can be only used in single-speaker scenarios, which broadens the practical applications of speech reconstruction systems in multi-speaker scenarios.
 
-**Detailed results and analysis for this work can be found in folder: **_analysis_**
+**You can find all results analyisis details: ** **_analysis_**
 
 ## Requirements
 We implemented the code in python3 using tensorflow, keras, scipy, dlib, skimage, pandas, numpy, cv2, sklearn, IPython, fnmatch. The mentioned libraries should be installed before running the codes. All the libraries can be easily installed using pip:
@@ -42,19 +42,19 @@ Our GaborFea2Speech system is a Sequence-to-sequence learning (Seq2Seq). It uses
 
 ### Demo
 
-You can find all demo files [here](demo/).
+You can find all demo files here. **_demo_**.
 
 A few samples of the network output are given below:
 
-**Demo on Single Speaker**
+** Demo on Single Speaker **
 
 [![Sample1](https://img.youtube.com/vi/-apenOxMQM8/0.jpg)](https://youtu.be/-apenOxMQM8)
 
-**Demo on Multiple Speakers**
+** Demo on Multiple Speakers **
 
 [![Sample2](https://img.youtube.com/vi/62pQrLAbw8E/0.jpg)](https://youtu.be/62pQrLAbw8E)
 
-**Demo on Vocabulary**
+** Demo on Vocabulary **
 
 [![Sample2](https://img.youtube.com/vi/62pQrLAbw8E/0.jpg)]
 
