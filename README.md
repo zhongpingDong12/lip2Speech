@@ -12,7 +12,7 @@ We used the Grid Corpus dataset to test the results on single speaker, multiple 
 
 Moreover, our GaborFea2Speech system can also reconstruct intelligent speech in multi-speaker scenarios. As the number of speakers increases, this system can still maintain robust speech construction capability (1-S, 2-S, 4-S, 6-S, 8-S; 72%, 68%, 71%, 65%, 61%), which is incomparable with other speech reconstruction systems, for example, GaborPic2Speech (1-S, 2-S, 4-S, 6-S, 8-S; 73%, 72%, 56%, 54%, 50%) and Lip2AudSpec (1-S, 2-S, 4-S, 6-S, 8-S; 0.63%, 40%, 39%, 33%, 29 %). This breaks the limitation that existing speech reconstruction systems can be only used in single-speaker scenarios, which broadens the practical applications of speech reconstruction systems in multi-speaker scenarios.
 
-**You can find all results analyisis details: ** **_analysis_**
+**You can find all results analyisis details: _analysis_**
 
 ## Requirements
 We implemented the code in python3 using tensorflow, keras, scipy, dlib, skimage, pandas, numpy, cv2, sklearn, IPython, fnmatch. The mentioned libraries should be installed before running the codes. All the libraries can be easily installed using pip:
