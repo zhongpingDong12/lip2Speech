@@ -61,7 +61,7 @@ You can find all demo files here. **_demo_**.
   
 ### Demo on Vocabulary
 
-[![Sample3](https://img.youtube.com/vi/yv0-dakuY6k/0.jpg)][(https://youtu.be/yv0-dakuY6k)
+[![Sample3](https://img.youtube.com/vi/yv0-dakuY6k/0.jpg)](https://youtu.be/yv0-dakuY6k)
   
   
 ## Cite
