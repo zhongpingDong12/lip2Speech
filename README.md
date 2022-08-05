@@ -50,7 +50,6 @@ Once data preparation steps are done, autoencoder model could be trained on the 
 You can find all demo files here. **_demo_**.
 
  **Demo on Single Speaker**    
- ------------- | ------------- | -------- 
  [![Sample1](https://img.youtube.com/vi/-apenOxMQM8/1.jpg)](https://youtu.be/-apenOxMQM8)   
  
  
