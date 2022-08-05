@@ -21,7 +21,7 @@ Our GaborPic2Speech system is an end-to-end neural network. It uses the lip Gabo
 
 Our GaborFea2Speech system is a Sequence-to-sequence learning (Seq2Seq). It uses seven Gabor features values extracted from dynamic lip frames as visual input, and fed into 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.
  
-![Main Network](figures/Network_main.png)
+![Main Network](figures/network_main.png)
 
 ## Requirements
 We implemented the code in python3 using tensorflow, keras, scipy, dlib, skimage, pandas, numpy, cv2, sklearn, IPython, fnmatch. The mentioned libraries should be installed before running the codes. All the libraries can be easily installed using pip:
