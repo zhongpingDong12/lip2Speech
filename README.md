@@ -17,9 +17,9 @@ Moreover, our GaborFea2Speech system can also reconstruct intelligent speech in 
 ## Architecture
 We developed two Gabor based speech recontruction system: GaborPic2Speech and GaborFea2Speech. We uses the deep end-to-end Lip2AudSpec as the basline system.
 
-##GaborPic2Speech## is an end-to-end neural network. It uses the lip Gabor Picture as visual input, and fed into 1-layer convolutional neural network (CNN) for image learning and 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.  Then, it decoded the output to generate auditory spectrogram and transfer to audio waveform. 
+**GaborPic2Speech** is an end-to-end neural network. It uses the lip Gabor Picture as visual input, and fed into 1-layer convolutional neural network (CNN) for image learning and 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.  Then, it decoded the output to generate auditory spectrogram and transfer to audio waveform. 
 
-##GaborFea2Speech ## is a Sequence-to-sequence learning (Seq2Seq). It uses seven Gabor features values extracted from dynamic lip frames as visual input, and fed into 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.
+**GaborFea2Speech** is a Sequence-to-sequence learning (Seq2Seq). It uses seven Gabor features values extracted from dynamic lip frames as visual input, and fed into 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.
  
 ![Main Network](figures/network_main.png)
 
@@ -34,13 +34,15 @@ The backend for Keras can be changed easily if needed.
 This study is based on GRID corpus(http://spandh.dcs.shef.ac.uk/gridcorpus/). To run the codes, you need to first download and preprocess both videos and audios.
 
 By running **_Gabor_extraction.py_** frames will be cropped from videos and Lip Gabor Pictures and Gabor Features will be extracted.
+In order to collect the extracted Gabor pictures and Gabor Features, we use **_GaborPic_collection.py_** and **_GaborFea_collection.py_**
 
+By running **_audioWav_extraction.py_** audio waveform will be extracted.
 In order to generate auditory spectrograms, the audios should be processed by NSLTools(http://www.isr.umd.edu/Labs/NSL/Software.htm) using **_wav2aud_** function in Matlab.
 
-After extarcted visual and audio data, we then window and integrate all data  in **_.mat_** formats for model training. This can be done by running **_modelInput_collection.py_**
+After extarcted visual and audio data, we then window and integrate all data in **_.mat_** format for model training. This can be done by running **_modelInput_GaborPic2Speech.py_** and  **_modelInput_GaborFea2Speech.py_**.
 
 ### Training the models
-Once data preparation steps are done, autoencoder model could be trained on the auditory spectrograms corresponding to valid videos using **_train_autoencoder.py_**. Training the main network could be performed using **_train_GP2Speech.py_** and **_train_GF2Speech.py_**
+Once data preparation steps are done, autoencoder model could be trained on the auditory spectrograms corresponding to valid videos using **_train_autoencoder.py_**. Training the main network could be performed using **_train_GaborPic2Speech.py_** and **_train_GaborFea2Speech.py_**
 
 
 ## Demo
