@@ -49,7 +49,7 @@ Once data preparation steps are done, autoencoder model could be trained on the 
 
 You can find all demo files here. **_demo_**.
 
-###Demo on Single Speaker 
+### Demo on Single Speaker 
 
 [![Sample1](https://img.youtube.com/vi/-apenOxMQM8/0.jpg)](https://youtu.be/-apenOxMQM8)   
  
@@ -59,7 +59,7 @@ You can find all demo files here. **_demo_**.
 [![Sample2](https://img.youtube.com/vi/62pQrLAbw8E/0.jpg)](https://youtu.be/62pQrLAbw8E)    
   
   
-###Demo on Vocabulary
+### Demo on Vocabulary
 
 [![Sample3](https://img.youtube.com/vi/yv0-dakuY6k/0.jpg)](https://youtu.be/yv0-dakuY6k)  
   
