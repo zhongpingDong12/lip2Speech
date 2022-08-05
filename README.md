@@ -15,11 +15,11 @@ Moreover, our GaborFea2Speech system can also reconstruct intelligent speech in 
 **You can find all results here: _results_**
 
 ## Architecture
-We developed two Gabor based speech recontruction system: GaborPic2Speech and GaborFea2Speech and we uses the deep end-to-end Lip2AudSpec as the basline system.
+We developed two Gabor based speech recontruction system: GaborPic2Speech and GaborFea2Speech. We uses the deep end-to-end Lip2AudSpec as the basline system.
 
-Our GaborPic2Speech system is an end-to-end neural network. It uses the lip Gabor Picture as visual input, and fed into 1-layer convolutional neural network (CNN) for image learning and 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.  Then, it decoded the output to generate auditory spectrogram and transfer to audio waveform. 
+##GaborPic2Speech## is an end-to-end neural network. It uses the lip Gabor Picture as visual input, and fed into 1-layer convolutional neural network (CNN) for image learning and 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.  Then, it decoded the output to generate auditory spectrogram and transfer to audio waveform. 
 
-Our GaborFea2Speech system is a Sequence-to-sequence learning (Seq2Seq). It uses seven Gabor features values extracted from dynamic lip frames as visual input, and fed into 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.
+##GaborFea2Speech ## is a Sequence-to-sequence learning (Seq2Seq). It uses seven Gabor features values extracted from dynamic lip frames as visual input, and fed into 1-layer Long short-term memory (LSTM) neural network for sequence learning, and then flatten to dense layer to generate the output.
  
 ![Main Network](figures/network_main.png)
 
