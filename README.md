@@ -51,7 +51,7 @@ You can find all demo files here. **_demo_**.
 
  **Demo on Single Speaker**     | **Demo on Multiple Speakers**      | **Demo on Vocabulary**     
  ------------- | ------------- | -------- 
- [![Sample1](https://img.youtube.com/vi/-apenOxMQM8/0.jpg)](https://youtu.be/-apenOxMQM8)         | [![Sample2](https://img.youtube.com/vi/62pQrLAbw8E/0.jpg)](https://youtu.be/62pQrLAbw8E)       |[![Sample3](https://img.youtube.com/vi/yv0-dakuY6k/0.jpg)](https://youtu.be/yv0-dakuY6k)  
+ [![Sample1](https://img.youtube.com/vi/-apenOxMQM8/0.jpg)](https://youtu.be/-apenOxMQM8)         | [![Sample2](https://img.youtube.com/vi/62pQrLAbw8E/0.jpg)](https://youtu.be/62pQrLAbw8E)       |[![Sample3](https://img.youtube.com/vi/yv0-dakuY6k/1.jpg)](https://youtu.be/yv0-dakuY6k)  
 
 
 ## Cite
