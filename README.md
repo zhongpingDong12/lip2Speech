@@ -1,5 +1,5 @@
 # Lip2Speech
-Generate intelligent speech from lip Gabor features
+Generate intelligent speech from silent videos
 
 ## Abstract
 In this study, we proposed two advanced speech reconstruction systems based on the fast and lightweight Gabor extraction method: **GaborPic2Speech** and **GaborFea2Speech**. 
